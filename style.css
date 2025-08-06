@@ -1,0 +1,115 @@
+body {
+  background-image: url("Camellya_BG.jfif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Chakra Petch', sans-serif;
+  color: #343a40;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cv-wrapper {
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9); /* พื้นหลังโปร่งแสงเล็กน้อย */
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 1s ease-out;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.img-thumbnail {
+  border: 4px solid #e8bab6; /* กรอบรูป */
+  padding: 0;
+}
+
+h3 {
+  color: #f28b82;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #f28b82;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  padding: 5px 0;
+}
+
+.badge {
+  background-color: #f28b82 !important; /* สีของ Skills badge */
+  color: white !important;
+  font-weight: normal;
+  transition: transform 0.2s ease-in-out;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
+
+.btn-outline-primary {
+  border: 2px solid #f28b82;
+  color: #f28b82;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #f28b82;
+  color: white;
+}
+
+.btn-social {
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.btn-social:hover {
+  transform: translateY(-3px);
+}
+
+.btn-github {
+  background-color: #333;
+}
+
+.btn-artstation {
+  background-color: #13aff0;
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 15px;
+}
+
+.modal-header {
+  background-color: #f28b82;
+  color: white;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.modal-body strong {
+  color: #f28b82;
+}
